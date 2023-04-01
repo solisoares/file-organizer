@@ -19,4 +19,4 @@ Este script é fácil de personalizar para suas necessidades específicas. Basta
 Se você gostaria de contribuir para este projeto, sinta-se à vontade para abrir uma issue ou pull request. Ficarei feliz em discutir suas ideias e melhorias para este projeto.
 
 ## Licença
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE]() para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/vilelas/file-organizer/blob/main/LICENSE) para mais detalhes.
