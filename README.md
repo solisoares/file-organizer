@@ -2,7 +2,7 @@
 Este é um pequeno projeto em Python que tem como objetivo organizar arquivos em uma pasta em subpastas separadas de acordo com a extensão do arquivo.
 
 ## Requisitos
-* [Python 3+](https://www.python.org/downloads/)
+* [Python 3.5 ou superior](https://www.python.org/downloads/)
 * ``pathlib`` e ``os`` (já incluídos na biblioteca padrão do Python)
 * Este código foi testado apenas no Windows. Não há garantia de que funcionará em outros sistemas operacionais.
 
