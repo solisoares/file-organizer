@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 
+import filetype
+
 AUDIO_EXT = ['.mp3']
 VIDEO_EXT = ['.mp4', '.mkv', '.avi']
 DOCUMENT_EXT = ['.pdf', '.docx', '.pptx', '.xls', '.doc', '.ppt', '.txt']
@@ -25,13 +27,16 @@ def organize_files(path: str) -> None:
         if not os.path.isdir(dir_path):
             os.mkdir(dir_path)
 
-    files = os.listdir(path)
+    files = [file for file in os.listdir(path) if os.path.isfile(file)]
 
     for file_name in files:
         extension = get_file_extension(file_name)
 
         if not extension:
-            continue  # Skip directories and files without extensions
+            try:
+                extension = '.' + filetype.guess_extension(file_name)
+            except TypeError:
+                extension = ''
 
         if extension in IMAGE_EXT:
             new_path = os.path.join(images_path, file_name)

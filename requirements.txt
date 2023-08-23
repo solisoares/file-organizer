@@ -1,0 +1,1 @@
+filetype  # guess extension without file suffix
